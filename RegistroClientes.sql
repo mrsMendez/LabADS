@@ -20,7 +20,7 @@ create table Direcciones (
 
 -- Tabla de Teléfonos
 create table Telefonos (
-    id_direccion UUID primary key default uuid_generate_v4(),
+    id_telefono UUID primary key default uuid_generate_v4(),
     cliente_id UUID not null,
     numero VARCHAR(20) not null,
     foreign key (cliente_id) references Clientes(id_cliente)
